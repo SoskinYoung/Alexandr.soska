@@ -1,8 +1,23 @@
+from turtle import * 
+bgcolor("white")
+color("red")
+title("StudyMuch")
+begin_fill()
+pensize(3)
+left(50)
+forward(133)
+circle(50,200)
+right(140)
+circle(50,200)
+forward(133)
+end_fill()
 
-sum = 0
-min = 3
-max = 8
-
-for i in range (min, max + 1):
-    sum += i
-print("Suma:",sum)
+penup()
+goto(0, - 50)
+pendown()
+color("red")
+write("I Love You", align = "center")
+front =("Brush Script TM", 45, "normal")
+hideturtle()
+done()
+ 
