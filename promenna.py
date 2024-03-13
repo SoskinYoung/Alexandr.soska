@@ -1,0 +1,6 @@
+a = float(3)
+print(a)
+b = int(1.1)
+print(b)
+c = str(5)
+print(c)
