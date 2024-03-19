@@ -1,11 +1,7 @@
-def vypis_interval(a, b):
-    for i in range(a, b + 1):
-        print(i, end="")
-        if i < b:
-            print(", ", end="")
-    print()
-a = int(input("Zadejte počáteční hodnotu intervalu: "))
-b = int(input("Zadejte koncovou hodnotu intervalu: "))
-
-print("Čísla v intervalu <" + str(a) + ";" + str(b) + ">: ", end="")
-vypis_interval(a, b)
+def prevod_na_hodiny(dny, hodiny):
+    celkovy_cas_v_hodinach = dny * 24 + hodiny
+    return celkovy_cas_v_hodinach
+dny = int(input("Zadejte počet dnů: "))
+hodiny = int(input("Zadejte počet hodin: "))
+celkovy_cas_v_hodinach = prevod_na_hodiny(dny, hodiny)
+print("Časový údaj", dny, "dnů a", hodiny, "hodin je celkem", celkovy_cas_v_hodinach, "hodin.")
