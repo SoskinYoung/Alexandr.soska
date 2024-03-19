@@ -1,11 +1,7 @@
-def vypis_interval(a, b):
-    for i in range(a, b + 1):
-        print(i, end="")
-        if i < b:
-            print(", ", end="")
-    print()
-a = int(input("Zadejte počáteční hodnotu intervalu: "))
-b = int(input("Zadejte koncovou hodnotu intervalu: "))
 
-print("Čísla v intervalu <" + str(a) + ";" + str(b) + ">: ", end="")
-vypis_interval(a, b)
+x = float(input("Zadejte hodnotu x: "))
+y = float(input("Zadejte hodnotu y: "))
+if 4*x + 3 < 5*y - 1:
+    print("Podmínka 4x + 3 < 5y - 1 je splněna.")
+else:
+    print("Podmínka 4x + 3 < 5y - 1 není splněna.")
